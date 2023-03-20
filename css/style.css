@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
+/*Header Kod*/
 header {
     height: 120px;
     border: solid black 2px;
-    background-color: orange;
-    
-    
+    background-color: lightslategray;
 }
 
 #areas{
@@ -36,4 +35,38 @@ justify-content: center;
 width: 33%;
 display: flex;
 justify-content: center;
+}
+
+#logos{
+    height: 40px;
+    width: auto;
+    margin-left: 30px;
+}
+
+#logos:hover{
+    cursor: pointer;
+}
+
+/*Footer Kod*/
+footer{
+    background-color: orange;
+    height: 200px;
+    border: solid black 2px;
+}
+
+#footer_setup{
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer-text{
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+}
+
+/*"Generell" Kod*/
+a{
+    color: black;
+    text-decoration: none;
 }
