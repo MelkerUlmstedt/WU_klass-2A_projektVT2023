@@ -10,7 +10,7 @@
 /*Header Kod*/
 header {
     height: 120px;
-    border: solid black 2px;
+    border: solid white 2px;
     background-color: rgb(33,32,55);
 }
 
@@ -58,7 +58,7 @@ h1{
 footer{
     background-color: rgb(33,32,55);
     height: 300px;
-    border: solid black 2px;
+    border: solid white 2px;
 }
 
 #footer_setup{
@@ -76,7 +76,7 @@ footer p {
 footer h3 { 
     font-size: 22px;
     margin: 50px 5px 20px 5px;
-    color: white;
+    text-align: left;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -86,8 +86,108 @@ footer #logos {
     margin-left: 10px;
 }
 
+footer p:hover {
+    cursor: pointer;
+}
+
 /*"Generell" Kod*/
 a{
     text-decoration: none;
     color: white;
+}
+
+#huvudbild {
+    width: 100%;
+}
+
+#gridwrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 200px 200px;
+    grid-template-areas: 
+    "tp dp"
+    "me me"
+    "ti ti";
+}
+
+#trainingplans {
+    grid-area: tp;
+    align-items: center;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    border: solid white 1px;
+    background-color: rgb(80,77,133);
+}
+
+#dietplans {
+    grid-area: dp;
+    align-items: center;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    border: solid white 1px;
+    background-color: rgb(80,77,133)
+}
+
+#meals{ 
+    grid-area: me;  
+    border: solid white 1px;
+    background-color: rgb(33,32,55)
+}
+
+#tips {
+    grid-area: ti;
+    border: solid white 1px;
+    background-color: rgb(80,77,133)
+}
+
+#planpicture {
+    height: 168px;
+    margin-top: 50px;
+}
+
+#overview-pics {
+    
+    width: 800px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+#plantext {
+    justify-content: space-evenly;
+    display: flex;
+    
+    font-size: large;
+}
+
+#preview_button {
+    justify-content: center;
+    display: flex;
+    
+}
+
+button {
+    width: 250px;
+    height: 60px;
+    border: black solid 2px;
+    border-radius: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#textbox{
+    background-color: rgb(33,32,55);
+    text-align: center;
 }
