@@ -71,6 +71,7 @@ footer p {
     margin: 5px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 footer h3 { 
@@ -176,10 +177,12 @@ h3 {
     text-align: center;
     color: white;
     margin: 10px 0px 10px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p {
     color: white;
+    margin-bottom: 10px;
 }
 
 #textbox{
@@ -225,5 +228,289 @@ p {
 }
 
 /*Träningssida*/
+#gridwrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "byn tpd tpd"
+    "pri tpd tpd"
+    "exe exe exe";
+}
+
+#buyinginfo {
+    grid-area: byn;
+    background-color: rgb(80,77,133);
+    border: solid white 2px;
+    border-radius: 10px;
+}
+
+#buyinginfo p {
+    margin: 10px;
+    line-height: 1.3em;
+}
+
+#programinformation {
+    grid-area: pri;
+    background-color: rgb(80,77,133);
+    border: solid white 2px;
+    border-radius: 10px;
+}
+
+#programinformation p {
+    margin: 10px;
+    line-height: 1.3em;
+}
+
+#trainingprogramdisplay {
+    grid-area: tpd;
+    background-color: rgb(80,77,133);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 250px 250px ;
+    grid-template-areas: 
+    "he he he he"
+    "t1 t2 t3 t4"
+    "t5 t6 t7 t8";
+    border: solid white 2px;
+    border-radius: 10px;
+}
+
+#heading {
+    grid-area: he;
+    font-size: 30px;
+}
+
+.heading-text {
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#trainingprogram1 { 
+    grid-area: t1;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram1:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#trainingprogram2 {
+    grid-area: t2;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram2:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#trainingprogram3 {
+    grid-area: t3;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram3:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#trainingprogram4 {
+    grid-area: t4;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram4:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#trainingprogram5 {
+    grid-area: t5;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram5:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#trainingprogram6 {
+    grid-area: t6;
+    border: solid white 1px;
+    background-color: rgb(33,32,55);
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram6:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#trainingprogram7 {
+    grid-area: t7;
+    border: solid white 1px;
+    background-color: rgb(33,32,55);
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram7:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#trainingprogram8 {
+    grid-area: t8;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram8:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#exercises {
+    grid-area: exe;
+    background-color: rgb(80,77,133);
+    border: solid white 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#miniwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px ;
+    grid-template-areas: 
+    "be dd sq";
+    border-top: solid white 4px;
+    justify-items: center;
+}
+
+#bench {
+    grid-area: be;
+    background-color: rgb(33,32,55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    border: white solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+#bench:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#deadlift{
+    grid-area: dd;
+    background-color: rgb(33,32,55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    border: white solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+#deadlift:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#squat{
+    grid-area: sq;
+    background-color: rgb(33,32,55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    border: white solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+#squat:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
 /*Kostsida*/
 /*Informationssida*/
