@@ -204,10 +204,12 @@ p {
     margin: 0px 15px 0px 15px;
     border: white solid 1px;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 #meal-img:hover {
     cursor: pointer;
+    transform: scale(1.02);
 }
 
 #tips {
@@ -240,7 +242,7 @@ p {
 
 #buyinginfo {
     grid-area: byn;
-    background-color: rgb(80,77,133);
+    background-color: rgb(33,32,55);
     border: solid white 2px;
     border-radius: 10px;
 }
@@ -252,7 +254,7 @@ p {
 
 #programinformation {
     grid-area: pri;
-    background-color: rgb(80,77,133);
+    background-color: rgb(33,32,55);
     border: solid white 2px;
     border-radius: 10px;
 }
@@ -512,5 +514,189 @@ p {
     transform: scale(1.02);
     cursor: pointer;
 }
+
 /*Kostsida*/
+#gridwrapper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "byn tpd tpd"
+    "pri tpd tpd"
+    "mel mel mel";
+}
+
+#meals2{ 
+    grid-area: mel;  
+    border: solid white 1px;
+    background-color: rgb(80,77,133);
+    text-align: center;
+}
+
+#dietplandisplay {
+    grid-area: tpd;
+    background-color: rgb(80,77,133);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 250px 250px ;
+    grid-template-areas: 
+    "he he he he"
+    "t1 t2 t3 t4"
+    "t5 t6 t7 t8";
+    border: solid white 2px;
+    border-radius: 10px;
+}
+
+#dietprogram1 { 
+    grid-area: t1;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#dietprogram1:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+#dietprogram2 {
+    grid-area: t2;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#dietprogram2:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#dietprogram3 {
+    grid-area: t3;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#dietprogram3:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#dietprogram4 {
+    grid-area: t4;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#dietprogram4:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#dietprogram5 {
+    grid-area: t5;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#dietprogram5:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#dietprogram6 {
+    grid-area: t6;
+    border: solid white 1px;
+    background-color: rgb(33,32,55);
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#dietprogram6:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#dietprogram7 {
+    grid-area: t7;
+    border: solid white 1px;
+    background-color: rgb(33,32,55);
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#dietprogram7:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#dietprogram8 {
+    grid-area: t8;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#dietprogram8:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
 /*Informationssida*/
