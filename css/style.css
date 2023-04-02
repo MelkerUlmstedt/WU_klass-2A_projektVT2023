@@ -91,6 +91,8 @@ footer p:hover {
 }
 
 /*"Generell" Kod*/
+
+/*Huvudsida*/
 a{
     text-decoration: none;
     color: white;
@@ -98,12 +100,13 @@ a{
 
 #huvudbild {
     width: 100%;
+    border: solid white 1px;
 }
 
 #gridwrapper1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 200px 200px;
+    grid-template-rows: 400px 350px 250px;
     grid-template-areas: 
     "tp dp"
     "me me"
@@ -127,28 +130,18 @@ a{
     flex-direction: column;
     justify-content: center;
     border: solid white 1px;
-    background-color: rgb(80,77,133)
-}
-
-#meals{ 
-    grid-area: me;  
-    border: solid white 1px;
-    background-color: rgb(33,32,55)
-}
-
-#tips {
-    grid-area: ti;
-    border: solid white 1px;
-    background-color: rgb(80,77,133)
+    background-color: rgb(80,77,133);
 }
 
 #planpicture {
     height: 168px;
     margin-top: 50px;
+    border: solid white 1px;
+    border-radius: 10px;
+    filter: blur(1.5px);
 }
 
 #overview-pics {
-    
     width: 800px;
     justify-content: space-evenly;
     display: flex;
@@ -172,6 +165,7 @@ button {
     height: 60px;
     border: black solid 2px;
     border-radius: 30px;
+    margin: 10px 0px 10px 0px;
 }
 
 button:hover {
@@ -181,6 +175,7 @@ button:hover {
 h3 {
     text-align: center;
     color: white;
+    margin: 10px 0px 10px 0px;
 }
 
 p {
@@ -189,5 +184,46 @@ p {
 
 #textbox{
     background-color: rgb(33,32,55);
+    border: solid white 1px;
     text-align: center;
 }
+
+#meals{ 
+    grid-area: me;  
+    border: solid white 1px;
+    background-color: rgb(33,32,55);
+    text-align: center;
+}
+
+#meal-img {
+    width: 300px;
+    height: auto;
+    margin: 0px 15px 0px 15px;
+    border: white solid 1px;
+    border-radius: 10px;
+}
+
+#meal-img:hover {
+    cursor: pointer;
+}
+
+#tips {
+    grid-area: ti;
+    border: solid white 1px;
+    background-color: rgb(80,77,133);
+    text-align: center;
+}
+
+#recommendation-img {
+    border: white solid 1px;
+    border-radius: 10px;
+    margin: 5px 150px 0px 150px;
+}
+
+#recommendation-img:hover {
+    cursor: pointer;
+}
+
+/*Träningssida*/
+/*Kostsida*/
+/*Informationssida*/
