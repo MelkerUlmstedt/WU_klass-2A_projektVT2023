@@ -716,6 +716,7 @@ p {
 #diet_information{
     background-color: rgb(80,77,133);
     height: 200px;
+    border: solid white 1px;
 }
 
 #diet_information h3{
@@ -843,6 +844,7 @@ p {
 
 #history img{
     width: 500px;
+    border: solid white 1px;
 }
 
 #about {
