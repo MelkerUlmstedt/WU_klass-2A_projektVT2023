@@ -103,7 +103,7 @@ footer p:hover {
 
 /*"Generell" Kod*/
 
-/*Huvudsida*/
+/*Indexsidan*/
 a{
     text-decoration: none;
     color: white;
@@ -726,6 +726,7 @@ p {
 #diet_information p {
     text-align: center;
     margin: 0px 15px 0px 15px;
+    line-height: 1.3em;
 }
 
 /*Hamburgermeny*/
@@ -790,7 +791,100 @@ p {
 }
 
 /*Informationssida*/
+#gridwrapper3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 300px;
+    grid-template-areas: 
+    "gua gua ter ter his his"
+    "abo abo abo mis mis mis";
+    background-color: rgb(80,77,133);
+    border: solid white 2px;
+}
 
+#gridwrapper3 h2 {
+    color: white;
+    margin: 10px 0px 10px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
 
+#gridwrapper3 h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+#guarantees {
+    grid-area: gua;
+    text-align: center;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    margin: 20px 10px 30px 10px;
+    border-radius: 30px;
+}
+
+#terms_of_purchase {
+    grid-area: ter;
+    text-align: center;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    margin: 20px 10px 30px 10px;
+    border-radius: 30px;
+}
+
+#history {
+    grid-area: his;
+    text-align: center;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    margin: 20px 10px 30px 10px;
+    border-radius: 30px;
+}
+
+#about {
+    grid-area: abo;
+    text-align: center;
+    border: solid white 1px;
+}
+
+#about p {
+    margin: 0px 15px 0px 15px;
+    line-height: 1.3em;
+}
+
+#our_mission {
+    grid-area: mis;
+    text-align: center;
+    border: solid white 1px;
+}
+
+#our_mission p {
+    margin: 0px 15px 0px 15px;
+    line-height: 1.3em;
+}
+
+#rating {
+    background-color: rgb(80,77,133);
+    border: solid white 2px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+#rating h2 {
+    color: white;
+    margin: 10px 0px 10px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    border: solid white 2px;
+    width: 500px;
+    border-radius: 30px;
+}
 
 /*Mediaaquiers*/
