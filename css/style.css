@@ -841,6 +841,10 @@ p {
     border-radius: 30px;
 }
 
+#history img{
+    width: 500px;
+}
+
 #about {
     grid-area: abo;
     text-align: center;
