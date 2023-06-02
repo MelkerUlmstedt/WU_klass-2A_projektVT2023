@@ -41,23 +41,15 @@ justify-content: center;
 }
 
 header img{
-    height: 40px;
+    height: 30px;
     width: auto;
-    margin-left: 30px;
-}
-
-header img:hover{
-    cursor: pointer;
+    margin-left: 10px;
 }
 
 footer img{
     height: 40px;
     width: auto;
     margin-left: 30px;
-}
-
-footer img:hover {
-    cursor: pointer;
 }
 
 h1{
@@ -67,38 +59,23 @@ h1{
 /*Footer Kod*/
 footer{
     background-color: rgb(33,32,55);
-    height: 300px;
+    height: 800px;
     border: solid white 2px;
-}
-
-#footer_setup{
-    display: flex;
-    justify-content: space-around;
 }
 
 footer p {
     font-size: 18px;
-    margin: 5px;
+    margin: 5px 5px 5px 30px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
 
 footer h3 { 
-    font-size: 22px;
-    margin: 50px 5px 20px 5px;
+    font-size: 26px;
+    margin: 50px 5px 20px 30px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-footer #logos {
-    height: 25px;
-    width: auto;
-    margin-left: 10px;
-}
-
-footer p:hover {
-    cursor: pointer;
 }
 
 /*"Generell" Kod*/
@@ -129,12 +106,13 @@ p {
 
 #gridwrapper1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px 380px 300px;
+    grid-template-columns: 100%;
+    grid-template-rows: 450px 400px 400px 300px;
     grid-template-areas: 
-    "tp dp"
-    "me me"
-    "ti ti";
+    "tp"
+    "dp"
+    "me"
+    "ti";
 }
 
 #gridwrapper1 h3 {
@@ -162,23 +140,24 @@ p {
 }
 
 .overview-pics {
-    width: 800px;
+    width: 100%;
     justify-content: space-evenly;
     display: flex;
 }
 
 .overview-pics img{
-    height: 168px;
+    height: 90px;
     margin-top: 50px;
     border: solid white 1px;
     border-radius: 10px;
-    filter: blur(1.5px);
+    filter: blur(1px);
 }
 
 .plantext {
     justify-content: space-evenly;
     display: flex;
     font-size: large;
+    text-align: center;
 }
 
 .preview_button {
@@ -192,10 +171,6 @@ button {
     border: black solid 2px;
     border-radius: 30px;
     margin: 10px 0px 10px 0px;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 h3 {
@@ -221,7 +196,13 @@ p {
     text-decoration: underline;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
+}
+
+#textbox h3 {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 26px;
 }
 
 #meals{ 
@@ -232,20 +213,12 @@ p {
 }
 
 #meals img{
-    width: 300px;
+    width: 100px;
     height: auto;
     margin: 0px 15px 0px 15px;
     border: white solid 1px;
     border-radius: 10px;
-    transition: 0.5s;
 }
-
-#meals img:hover {
-    cursor: pointer;
-    transform: scale(1.02);
-}
-
-
 
 #tips {
     grid-area: ti;
@@ -257,22 +230,27 @@ p {
 #tips img {
     border: white solid 1px;
     border-radius: 10px;
-    margin: 5px 150px 0px 150px;
+    margin: 10px;
+    height: 80px;
 }
 
-#tips img:hover {
-    cursor: pointer;
+.tipspictures {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 /*Träningssida*/
 #gridwrapper2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 450px 550px 550px 300px;
     grid-template-areas: 
-    "byn tpd tpd"
-    "pri tpd tpd"
-    "exe exe exe";
+    "byn byn"
+    "pri pri"
+    "tpd tpd"
+    "tpd tpd"
+    "exe exe";
 }
 
 #buyinginfo {
@@ -290,6 +268,11 @@ p {
     text-align: center;
 }
 
+#buyinginfo h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 #programinformation {
     grid-area: pri;
     background-color: rgb(33,32,55);
@@ -305,18 +288,30 @@ p {
     text-align: center;
 }
 
+#programinformation h3 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 #trainingprogramdisplay {
     grid-area: tpd;
     background-color: rgb(80,77,133);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 80px 250px 250px ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 250px 250px 250px 250px;
     grid-template-areas: 
-    "he he he he"
-    "t1 t2 t3 t4"
-    "t5 t6 t7 t8";
+    "he he"
+    "t1 t2"
+    "t3 t4"
+    "t5 t6"
+    "t7 t8";
     border: solid white 2px;
     border-radius: 10px;
+}
+
+#trainingprogramdisplay img {
+    width: 140px;
+    height: auto;
 }
 
 #trainingprogramdisplay h3 {
@@ -339,7 +334,8 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -348,27 +344,20 @@ p {
     transition: 0.5s;
 }
 
-#trainingprogram1:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
+
 #trainingprogram2 {
     grid-area: t2;
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 5px;
     transition: 0.5s;
-}
-
-#trainingprogram2:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #trainingprogram3 {
@@ -376,18 +365,14 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 5px;
     transition: 0.5s;
-}
-
-#trainingprogram3:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #trainingprogram4 {
@@ -395,7 +380,8 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,28 +390,19 @@ p {
     transition: 0.5s;
 }
 
-#trainingprogram4:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
 #trainingprogram5 {
     grid-area: t5;
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 5px;
     transition: 0.5s;
-}
-
-#trainingprogram5:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #trainingprogram6 {
@@ -433,18 +410,14 @@ p {
     border: solid white 1px;
     background-color: rgb(33,32,55);
     border-radius: 10px;
-    width: 310px;
+    width: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 5px;
     transition: 0.5s;
-}
-
-#trainingprogram6:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #trainingprogram7 {
@@ -452,18 +425,14 @@ p {
     border: solid white 1px;
     background-color: rgb(33,32,55);
     border-radius: 10px;
-    width: 310px;
+    width: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 5px;
     transition: 0.5s;
-}
-
-#trainingprogram7:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #trainingprogram8 {
@@ -471,18 +440,14 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 5px;
     transition: 0.5s;
-}
-
-#trainingprogram8:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #exercises {
@@ -521,11 +486,6 @@ p {
     transition: 0.5s;
 }
 
-#bench:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
 #deadlift{
     grid-area: dd;
     background-color: rgb(33,32,55);
@@ -540,11 +500,6 @@ p {
     transition: 0.5s;
 }
 
-#deadlift:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
 #squat{
     grid-area: sq;
     background-color: rgb(33,32,55);
@@ -557,11 +512,6 @@ p {
     border-radius: 10px;
     margin-top: 10px;
     transition: 0.5s;
-}
-
-#squat:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 /*Kostsida*/
@@ -579,11 +529,6 @@ p {
     border: white solid 1px;
     border-radius: 10px;
     transition: 0.5s;   
-}
-
-#meals2 img:hover {
-    cursor: pointer;
-    transform: scale(1.02);
 }
 
 #dietplandisplay {
@@ -620,10 +565,6 @@ p {
     
 }
 
-#dietprogram1:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
 #dietprogram2 {
     grid-area: t2;
     background-color: rgb(33,32,55);
@@ -636,11 +577,6 @@ p {
     flex-direction: column;
     margin: 0 80px 5px 80px;
     transition: 0.5s;
-}
-
-#dietprogram2:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #dietprogram3 {
@@ -657,11 +593,6 @@ p {
     transition: 0.5s;
 }
 
-#dietprogram3:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
 #dietprogram4 {
     grid-area: t4;
     background-color: rgb(33,32,55);
@@ -674,11 +605,6 @@ p {
     flex-direction: column;
     margin: 0 80px 5px 80px;
     transition: 0.5s;
-}
-
-#dietprogram4:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #dietprogram5 {
@@ -695,11 +621,6 @@ p {
     transition: 0.5s;
 }
 
-#dietprogram5:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
 #dietprogram6 {
     grid-area: t6;
     border: solid white 1px;
@@ -712,11 +633,6 @@ p {
     flex-direction: column;
     margin: 5px 80px 0px 80px;
     transition: 0.5s;
-}
-
-#dietprogram6:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #dietprogram7 {
@@ -733,11 +649,6 @@ p {
     transition: 0.5s;
 }
 
-#dietprogram7:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-}
-
 #dietprogram8 {
     grid-area: t8;
     background-color: rgb(33,32,55);
@@ -750,11 +661,6 @@ p {
     flex-direction: column;
     margin: 5px 80px 0px 80px;
     transition: 0.5s;
-}
-
-#dietprogram8:hover {
-    transform: scale(1.02);
-    cursor: pointer;
 }
 
 #diet_information{
@@ -921,4 +827,435 @@ p {
     border-radius: 30px;
 }
 
-/*Mediaaquiers*/
+/*Media queries*/
+@media screen and (min-width:400px) {
+    header img{
+        height: 40px;
+        width: auto;
+        margin-left: 30px;
+    }
+
+    header img:hover{
+        cursor: pointer;
+    }
+    
+    footer img:hover {
+        cursor: pointer;
+    }
+    
+    footer p:hover {
+        cursor: pointer;
+    }
+    
+    button:hover {
+        cursor: pointer;
+    }
+    
+    #meals img:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+    
+    #tips img:hover {
+        cursor: pointer;
+    }
+    
+    #trainingprogram1:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #trainingprogram2:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #trainingprogram3:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #trainingprogram4:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #trainingprogram5:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #trainingprogram6:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #trainingprogram7:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #trainingprogram8:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #bench:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #deadlift:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #squat:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #meals2 img:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+    
+    #dietprogram1:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #dietprogram2:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    #dietprogram3:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #dietprogram4:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #dietprogram5:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #dietprogram6:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #dietprogram7:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+
+    #dietprogram8:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+    }
+    
+    footer{
+        height: 400px;
+    }
+    
+    #footer_setup{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    footer p {
+        margin: 5px;
+    }
+    
+    footer h3 { 
+        margin: 50px 5px 20px 5px;
+    }
+    
+
+/*Indexsidan*/
+
+#gridwrapper1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px 380px 300px;
+    grid-template-areas: 
+    "tp dp"
+    "me me"
+    "ti ti";
+}
+
+.overview-pics {
+    width: 800px;
+}
+
+.overview-pics img{
+    height: 168px;
+    filter: blur(1.5px);
+}
+
+#textbox p {
+    font-size: 20px;
+}
+
+#textbox h3 {
+    font-size: 32px;
+}
+
+#meals img{
+    width: 300px;
+    transition: 0.5s;
+}
+
+#tips img {
+    margin: 5px 150px 0px 150px;
+    height: 134px;
+}
+
+
+
+/*Träningssida*/
+#gridwrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "byn tpd tpd"
+    "pri tpd tpd"
+    "exe exe exe";
+}
+
+#programinformation {
+    grid-area: pri;
+    background-color: rgb(33,32,55);
+    border: solid white 2px;
+    border-radius: 10px;
+}
+
+#programinformation p {
+    margin: 10px;
+    line-height: 1.3em;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
+
+#trainingprogramdisplay {
+    grid-area: tpd;
+    background-color: rgb(80,77,133);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 250px 250px ;
+    grid-template-areas: 
+    "he he he he"
+    "t1 t2 t3 t4"
+    "t5 t6 t7 t8";
+    border: solid white 2px;
+    border-radius: 10px;
+}
+
+#trainingprogramdisplay img {
+    height: 168;
+    width: 300;
+}
+
+#trainingprogramdisplay h3 {
+    font-size: 22px;
+}
+
+#heading {
+    grid-area: he;
+}
+
+.heading-text {
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 32px;
+}
+
+#trainingprogram1 { 
+    grid-area: t1;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+
+#trainingprogram2 {
+    grid-area: t2;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram3 {
+    grid-area: t3;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram4 {
+    grid-area: t4;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram5 {
+    grid-area: t5;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram6 {
+    grid-area: t6;
+    border: solid white 1px;
+    background-color: rgb(33,32,55);
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram7 {
+    grid-area: t7;
+    border: solid white 1px;
+    background-color: rgb(33,32,55);
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#trainingprogram8 {
+    grid-area: t8;
+    background-color: rgb(33,32,55);
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+#exercises {
+    grid-area: exe;
+    background-color: rgb(80,77,133);
+    border: solid white 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#miniwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px ;
+    grid-template-areas: 
+    "be dd sq";
+    border-top: solid white 4px;
+    justify-items: center;
+}
+
+#miniwrapper h3 {
+    font-size: 22px;
+}
+
+#bench {
+    grid-area: be;
+    background-color: rgb(33,32,55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    border: white solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+#deadlift{
+    grid-area: dd;
+    background-color: rgb(33,32,55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    border: white solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+#squat{
+    grid-area: sq;
+    background-color: rgb(33,32,55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    border: white solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+
+    
+}
