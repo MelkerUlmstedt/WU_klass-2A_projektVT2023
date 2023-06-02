@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=DM+Sans&display=swap');
 
 *{
     margin: 0px;
@@ -104,9 +104,22 @@ footer p:hover {
 /*"Generell" Kod*/
 
 /*Indexsidan*/
+h2 {
+    color: white;
+    margin: 10px 0px 10px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 36px;
+}
+
 a{
     text-decoration: none;
     color: white;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
 }
 
 #huvudbild {
@@ -117,11 +130,15 @@ a{
 #gridwrapper1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 350px 250px;
+    grid-template-rows: 450px 380px 300px;
     grid-template-areas: 
     "tp dp"
     "me me"
     "ti ti";
+}
+
+#gridwrapper1 h3 {
+    text-decoration: underline;
 }
 
 #trainingplans {
@@ -186,6 +203,7 @@ h3 {
     color: white;
     margin: 10px 0px 10px 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
 }
 
 p {
@@ -197,6 +215,13 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     text-align: center;
+}
+
+#textbox p {
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 20px;
 }
 
 #meals{ 
@@ -260,6 +285,9 @@ p {
 #buyinginfo p {
     margin: 10px;
     line-height: 1.3em;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
 }
 
 #programinformation {
@@ -272,6 +300,9 @@ p {
 #programinformation p {
     margin: 10px;
     line-height: 1.3em;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
 }
 
 #trainingprogramdisplay {
@@ -288,15 +319,19 @@ p {
     border-radius: 10px;
 }
 
+#trainingprogramdisplay h3 {
+    font-size: 22px;
+}
+
 #heading {
     grid-area: he;
-    font-size: 30px;
 }
 
 .heading-text {
     text-decoration: underline;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+    font-size: 32px;
 }
 
 #trainingprogram1 { 
@@ -468,6 +503,10 @@ p {
     justify-items: center;
 }
 
+#miniwrapper h3 {
+    font-size: 22px;
+}
+
 #bench {
     grid-area: be;
     background-color: rgb(33,32,55);
@@ -560,6 +599,11 @@ p {
     border-radius: 10px;
     height: 630px;
 }
+
+#dietplandisplay h3 {
+    font-size: 22px;
+}
+
 
 #dietprogram1 { 
     grid-area: t1;
@@ -728,6 +772,8 @@ p {
     text-align: center;
     margin: 0px 15px 0px 15px;
     line-height: 1.3em;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 /*Hamburgermeny*/
@@ -795,7 +841,7 @@ p {
 #gridwrapper3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 500px 300px;
+    grid-template-rows: 500px 350px;
     grid-template-areas: 
     "gua gua ter ter his his"
     "abo abo abo mis mis mis";
@@ -803,16 +849,15 @@ p {
     border: solid white 2px;
 }
 
-#gridwrapper3 h2 {
-    color: white;
-    margin: 10px 0px 10px 0px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#gridwrapper3 h3 {
     text-decoration: underline;
 }
 
-#gridwrapper3 h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: underline;
+#gridwrapper3 p {
+    margin: 0px 15px 5px 15px;
+    line-height: 1.3em;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 #guarantees {
@@ -843,7 +888,7 @@ p {
 }
 
 #history img{
-    width: 500px;
+    width: 450px;
     border: solid white 1px;
 }
 
@@ -853,20 +898,10 @@ p {
     border: solid white 1px;
 }
 
-#about p {
-    margin: 0px 15px 0px 15px;
-    line-height: 1.3em;
-}
-
 #our_mission {
     grid-area: mis;
     text-align: center;
     border: solid white 1px;
-}
-
-#our_mission p {
-    margin: 0px 15px 0px 15px;
-    line-height: 1.3em;
 }
 
 #rating {
@@ -876,13 +911,6 @@ p {
     flex-direction: column;
     align-items: center;
     height: 200px;
-}
-
-#rating h2 {
-    color: white;
-    margin: 10px 0px 10px 0px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: underline;
 }
 
 .stars {
