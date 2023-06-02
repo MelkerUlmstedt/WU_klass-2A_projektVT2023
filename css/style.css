@@ -244,13 +244,13 @@ p {
 #gridwrapper2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 450px 550px 550px 300px;
+    grid-template-rows: 550px 550px 700px 400px 450px ;
     grid-template-areas: 
+    "tpd tpd"
+    "tpd tpd"
+    "exe exe"
     "byn byn"
-    "pri pri"
-    "tpd tpd"
-    "tpd tpd"
-    "exe exe";
+    "pri pri";
 }
 
 #buyinginfo {
@@ -265,7 +265,7 @@ p {
     line-height: 1.3em;
     font-size: 16px;
     font-family: 'DM Sans', sans-serif;
-    text-align: center;
+    text-align: left;
 }
 
 #buyinginfo h3 {
@@ -285,7 +285,7 @@ p {
     line-height: 1.3em;
     font-size: 16px;
     font-family: 'DM Sans', sans-serif;
-    text-align: center;
+    text-align: left;
 }
 
 #programinformation h3 {
@@ -341,7 +341,6 @@ p {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 5px;
-    transition: 0.5s;
 }
 
 
@@ -460,16 +459,22 @@ p {
 
 #miniwrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 200px 200px;
     grid-template-areas: 
-    "be dd sq";
+    "be" 
+    "dd" 
+    "sq";
     border-top: solid white 4px;
     justify-items: center;
 }
 
 #miniwrapper h3 {
     font-size: 22px;
+}
+
+#miniwrapper img {
+    height: 120px;
 }
 
 #bench {
@@ -479,21 +484,21 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     border: white solid 1px;
     border-radius: 10px;
     margin-top: 10px;
     transition: 0.5s;
 }
 
-#deadlift{
+#deadlift {
     grid-area: dd;
     background-color: rgb(33,32,55);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     border: white solid 1px;
     border-radius: 10px;
     margin-top: 10px;
@@ -507,7 +512,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     border: white solid 1px;
     border-radius: 10px;
     margin-top: 10px;
@@ -519,30 +524,34 @@ p {
     border: solid white 1px;
     background-color: rgb(80,77,133);
     text-align: center;
-    height: 300px;
+    height: 400px;
 }
 
 #meals2 img{
-    width: 300px;
+    width: 150px;
     height: auto;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 15px 0px 15px;
     border: white solid 1px;
     border-radius: 10px;
-    transition: 0.5s;   
 }
 
 #dietplandisplay {
     background-color: rgb(80,77,133);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 80px 250px 250px ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 250px 250px 250px 250px 250px 250px 250px 250px ;
     grid-template-areas: 
-    "he he he he"
-    "t1 t2 t3 t4"
-    "t5 t6 t7 t8";
+    "he"
+    "t1" 
+    "t2"
+    "t3" 
+    "t4"
+    "t5" 
+    "t6"
+    "t7" 
+    "t8";
     border: solid white 2px;
     border-radius: 10px;
-    height: 630px;
 }
 
 #dietplandisplay h3 {
@@ -555,14 +564,14 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 80px 5px 80px;
-    transition: 0.5s;
-    
+    margin-bottom: 5px;
+    margin-left: 35px;
 }
 
 #dietprogram2 {
@@ -570,13 +579,14 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 80px 5px 80px;
-    transition: 0.5s;
+    margin-bottom: 5px;
+    margin-left: 35px;
 }
 
 #dietprogram3 {
@@ -584,13 +594,14 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 80px 5px 80px;
-    transition: 0.5s;
+    margin-bottom: 5px;
+    margin-left: 35px;
 }
 
 #dietprogram4 {
@@ -598,13 +609,14 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 80px 5px 80px;
-    transition: 0.5s;
+    margin-bottom: 5px;
+    margin-left: 35px;
 }
 
 #dietprogram5 {
@@ -612,41 +624,44 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5px 80px 0px 80px;
-    transition: 0.5s;
+    margin-bottom: 5px;
+    margin-left: 35px;
 }
 
 #dietprogram6 {
     grid-area: t6;
-    border: solid white 1px;
     background-color: rgb(33,32,55);
+    border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5px 80px 0px 80px;
-    transition: 0.5s;
+    margin-bottom: 5px;
+    margin-left: 35px;
 }
 
 #dietprogram7 {
     grid-area: t7;
-    border: solid white 1px;
     background-color: rgb(33,32,55);
+    border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5px 80px 0px 80px;
-    transition: 0.5s;
+    margin-bottom: 5px;
+    margin-left: 35px;
 }
 
 #dietprogram8 {
@@ -654,18 +669,24 @@ p {
     background-color: rgb(33,32,55);
     border: solid white 1px;
     border-radius: 10px;
-    width: 310px;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5px 80px 0px 80px;
-    transition: 0.5s;
+    margin-bottom: 5px;
+    margin-left: 35px;
+}
+
+#dietplandisplay img {
+    width: 220px;
+    height: auto;
 }
 
 #diet_information{
     background-color: rgb(80,77,133);
-    height: 200px;
+    height: 550px;
     border: solid white 1px;
 }
 
@@ -675,7 +696,7 @@ p {
 }
 
 #diet_information p {
-    text-align: center;
+    text-align: left;
     margin: 0px 15px 0px 15px;
     line-height: 1.3em;
     font-size: 16px;
@@ -686,11 +707,12 @@ p {
   
 #hamburger {
     width: 30px;
-    height: 25px;
+    height: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 #hamburger div {
@@ -704,8 +726,8 @@ p {
 #menu {
     display: flex;
     flex-direction: column;
-    height: 600px;
-    width: 250px;
+    height: 500px;
+    width: 373px;
     background-color: rgb(33,32,55);
     justify-content: space-around;
     align-items: center;
@@ -714,6 +736,7 @@ p {
     left: 2px;
     border-bottom: solid 2px white;
     border-right: solid 2px white;
+    border-top: solid 2px white;
 }
   
 #menu li {
@@ -728,7 +751,7 @@ p {
 }
 
 .toggle_hamburger #line1 {
-    transform: rotate(-45deg) translate(-5px, 10px);
+    transform: rotate(-45deg) translate(-5px, 7px);
 }
 
 .toggle_hamburger #line2 {
@@ -736,7 +759,7 @@ p {
 }
 
 .toggle_hamburger #line3 {
-    transform: rotate(45deg) translate(-5px, -10px);
+    transform: rotate(45deg) translate(-5px, -7px);
 }
 
 .activate_menu {
@@ -746,24 +769,34 @@ p {
 /*Informationssida*/
 #gridwrapper3{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 500px 350px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px 450px 420px 650px;
     grid-template-areas: 
-    "gua gua ter ter his his"
-    "abo abo abo mis mis mis";
+    "gua gua" 
+    "ter ter"
+    "his his"
+    "abo mis";
     background-color: rgb(80,77,133);
     border: solid white 2px;
 }
 
+#gridwrapper3 h2 {
+    font-size: 20px;
+}
+
 #gridwrapper3 h3 {
     text-decoration: underline;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #gridwrapper3 p {
     margin: 0px 15px 5px 15px;
     line-height: 1.3em;
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'DM Sans', sans-serif;
+    text-align: left;
 }
 
 #guarantees {
@@ -794,8 +827,9 @@ p {
 }
 
 #history img{
-    width: 450px;
+    width: 280px;
     border: solid white 1px;
+    margin-top: 20px;
 }
 
 #about {
@@ -823,8 +857,13 @@ p {
     display: flex;
     justify-content: center;
     border: solid white 2px;
-    width: 500px;
+    width: 250px;
     border-radius: 30px;
+}
+
+.stars img {
+    width: 40px;
+
 }
 
 /*Media queries*/
@@ -1021,7 +1060,6 @@ p {
 
 /*Träningssida*/
 #gridwrapper2 {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px;
     grid-template-areas: 
@@ -1030,232 +1068,218 @@ p {
     "exe exe exe";
 }
 
-#programinformation {
-    grid-area: pri;
-    background-color: rgb(33,32,55);
-    border: solid white 2px;
-    border-radius: 10px;
-}
-
-#programinformation p {
-    margin: 10px;
-    line-height: 1.3em;
-    font-size: 16px;
-    font-family: 'DM Sans', sans-serif;
-    text-align: center;
-}
-
 #trainingprogramdisplay {
-    grid-area: tpd;
-    background-color: rgb(80,77,133);
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 80px 250px 250px ;
     grid-template-areas: 
     "he he he he"
     "t1 t2 t3 t4"
     "t5 t6 t7 t8";
-    border: solid white 2px;
-    border-radius: 10px;
 }
 
 #trainingprogramdisplay img {
-    height: 168;
-    width: 300;
-}
-
-#trainingprogramdisplay h3 {
-    font-size: 22px;
-}
-
-#heading {
-    grid-area: he;
-}
-
-.heading-text {
-    text-decoration: underline;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    font-size: 32px;
+    height: 120px;
+    width: 280px;
 }
 
 #trainingprogram1 { 
-    grid-area: t1;
-    background-color: rgb(33,32,55);
-    border: solid white 1px;
-    border-radius: 10px;
-    width: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 5px;
+    width: 290px;
     transition: 0.5s;
 }
 
 
 #trainingprogram2 {
-    grid-area: t2;
-    background-color: rgb(33,32,55);
-    border: solid white 1px;
-    border-radius: 10px;
-    width: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 5px;
+    width: 290px;
     transition: 0.5s;
 }
 
 #trainingprogram3 {
-    grid-area: t3;
-    background-color: rgb(33,32,55);
-    border: solid white 1px;
-    border-radius: 10px;
-    width: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 5px;
+    width: 290px;
     transition: 0.5s;
 }
 
 #trainingprogram4 {
-    grid-area: t4;
-    background-color: rgb(33,32,55);
-    border: solid white 1px;
-    border-radius: 10px;
-    width: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 5px;
+    width: 290px;
     transition: 0.5s;
 }
 
 #trainingprogram5 {
-    grid-area: t5;
-    background-color: rgb(33,32,55);
-    border: solid white 1px;
-    border-radius: 10px;
-    width: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 5px;
+    width: 290px;
     transition: 0.5s;
 }
 
 #trainingprogram6 {
-    grid-area: t6;
-    border: solid white 1px;
-    background-color: rgb(33,32,55);
-    border-radius: 10px;
-    width: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 5px;
+    width: 290px;
     transition: 0.5s;
 }
 
 #trainingprogram7 {
-    grid-area: t7;
-    border: solid white 1px;
-    background-color: rgb(33,32,55);
-    border-radius: 10px;
-    width: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 5px;
+    width: 290px;
     transition: 0.5s;
 }
 
 #trainingprogram8 {
-    grid-area: t8;
-    background-color: rgb(33,32,55);
-    border: solid white 1px;
-    border-radius: 10px;
-    width: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 5px;
+    width: 290px;
     transition: 0.5s;
 }
 
-#exercises {
-    grid-area: exe;
-    background-color: rgb(80,77,133);
-    border: solid white 2px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
 #miniwrapper {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px ;
     grid-template-areas: 
     "be dd sq";
-    border-top: solid white 4px;
-    justify-items: center;
-}
-
-#miniwrapper h3 {
-    font-size: 22px;
 }
 
 #bench {
-    grid-area: be;
-    background-color: rgb(33,32,55);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     width: 200px;
-    border: white solid 1px;
-    border-radius: 10px;
-    margin-top: 10px;
-    transition: 0.5s;
 }
 
-#deadlift{
-    grid-area: dd;
-    background-color: rgb(33,32,55);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#deadlift {
     width: 200px;
-    border: white solid 1px;
-    border-radius: 10px;
-    margin-top: 10px;
-    transition: 0.5s;
 }
 
 #squat{
-    grid-area: sq;
-    background-color: rgb(33,32,55);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     width: 200px;
-    border: white solid 1px;
-    border-radius: 10px;
-    margin-top: 10px;
-    transition: 0.5s;
 }
 
 
+#miniwrapper img {
+    height: 100px;
+}
     
+/*Kostsida*/
+#meals2{  
+    height: 300px;
+}
+
+#meals2 img{
+    width: 300px;
+    margin: 0px 20px 0px 20px;
+    transition: 0.5s;   
+}
+
+#dietplandisplay {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 250px 250px ;
+    grid-template-areas: 
+    "he he he he"
+    "t1 t2 t3 t4"
+    "t5 t6 t7 t8";
+    height: 630px;
+}
+
+#dietprogram1 { 
+    width: 310px;
+    margin: 0px 80px 5px 80px;
+    transition: 0.5s; 
+}
+
+#dietprogram2 {
+    width: 310px;
+    margin: 0px 80px 5px 80px;
+    transition: 0.5s; 
+}
+
+#dietprogram3 {
+    width: 310px;
+    margin: 0px 80px 5px 80px;
+    transition: 0.5s; 
+}
+
+#dietprogram4 {
+    width: 310px;
+    margin: 0px 0px 5px 80px;
+    transition: 0.5s; 
+}
+
+#dietprogram5 {
+    width: 310px;
+    margin: 0px 80px 5px 80px;
+    transition: 0.5s; 
+}
+
+#dietprogram6 {
+    width: 310px;
+    margin: 0px 80px 5px 80px;
+    transition: 0.5s; 
+}
+
+#dietprogram7 {
+    width: 310px;
+    margin: 0px 80px 5px 80px;
+    transition: 0.5s; 
+}
+
+#dietprogram8 {
+    width: 310px;
+    margin: 0px 0px 5px 80px;
+    transition: 0.5s; 
+}
+
+#dietplandisplay img {
+    height: 120px;
+    width: 280px;
+}
+
+#diet_information{
+    height: 200px;
+}
+
+/*Hamburgermeny*/
+  
+#hamburger {
+    height: 25px;
+}
+  
+#menu {
+    height: 600px;
+    width: 1893px;  
+}
+  
+#menu a {
+    font-size: 32px;
+}
+
+.toggle_hamburger #line1 {
+    transform: rotate(-45deg) translate(-5px, 10px);
+}
+
+.toggle_hamburger #line3 {
+    transform: rotate(45deg) translate(-5px, -10px);
+}
+
+/*Informationssida*/
+#gridwrapper3{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 500px 350px;
+    grid-template-areas: 
+    "gua gua ter ter his his"
+    "abo abo abo mis mis mis";
+}
+
+#gridwrapper3 h2 {
+    font-size: 36px;
+}
+
+#gridwrapper3 h3 {
+    font-size: 32px;
+}
+
+#gridwrapper3 p {
+    font-size: 16px;
+}
+
+#history img{
+    width: 450px;
+}
+
+.stars {
+    width: 500px;
+}
+
+.stars img {
+    width: 96px;
+
+}
+
 }
